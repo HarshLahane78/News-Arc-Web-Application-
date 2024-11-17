@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Article</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+    <!-- Back Button at the Top Left Corner -->
+    <div class="d-flex justify-content-start">
+        <a href="{{ url_for('index') }}" class="btn btn-secondary btn-sm">
+            &larr; Back to Home
+        </a>
+    </div>
+	<div class="card mt-4">
+        <!-- Article Image -->
+        <img src="{{ url_for('static', filename='images/trump.jpeg') }}"  class="card-img-top" alt="News Image" style="max-height: 400px; object-fit: cover;">
+
+        <!-- Article Body -->
+        <div class="card-body">
+            <h2 class="card-title">Trump Won The US Election</h2>
+            <p class="card-text">no longer be considered citizens of that country if neither parent is a US national or a permanent resident. This possibility has now become a cause of concern for millions of Indians, whose children are likely to be impacted, if Trump signs an executive order.
+
+Donald Trump had vowed to curb naturalised citizenship. It was a part of his campaign document and a pledge he and Vance promised would be done on "Day 1". A draft of the proposed executive order has been posted on the official campaign website of the duo.
+
+Also Read | 2024 US elections: Vice President-elect JD Vance’s message for Usha Chilukuri
+The order states, "Federal agencies will be instructed to mandate that at least one parent be a US citizen or lawful permanent resident for their future children to automatically acquire U.S. citizenship."</p>
+
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JavaScript and dependencies (Optional if needed for other functionalities) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
